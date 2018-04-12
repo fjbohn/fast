@@ -1,0 +1,17 @@
+Package: FAST
+Type: Package
+Title: Forest analysing and simulating toolbox
+Depends:
+    RColorBrewer,data.table,colorspace
+Version: 0.17-11
+Date: 2017-11-08
+Author: Friedich J. Bohn
+Maintainer: Friedrich J. Bohn <friedrich.bohn@ufz.de>
+Description: FAST contains several plotting functions, data-read-functions,
+    simulation-functions and color paletts which are optimized for the FORMIND-model
+    (formind.org)
+License: GPL-3
+RoxygenNote: 6.0.1
+Suggests: knitr,
+    rmarkdown
+VignetteBuilder: knitr
