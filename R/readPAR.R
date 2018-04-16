@@ -3,7 +3,8 @@
 #'
 #' @param parFile Character string indicating the par-file, which will be read
 #' @param parameter vector of parameter files or NA. default: NA ,reads all parameters
-#' @note  
+#' @param pftNames vector of pft Names which will be placed in the headers of parameters which differ between pfts.
+#'
 #' @export
 
 

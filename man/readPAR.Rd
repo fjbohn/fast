@@ -10,10 +10,9 @@ readPAR(parFile, parameter = NA, pftNames = NA)
 \item{parFile}{Character string indicating the par-file, which will be read}
 
 \item{parameter}{vector of parameter files or NA. default: NA ,reads all parameters}
+
+\item{pftNames}{vector of pft Names which will be placed in the headers of parameters which differ between pfts.}
 }
 \description{
 read par-files to R
-}
-\note{
-
 }

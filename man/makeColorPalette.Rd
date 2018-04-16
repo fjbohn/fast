@@ -9,9 +9,9 @@ makeColorPalette(n, graphicType = "plotBox", totalExists = F)
 \arguments{
 \item{n}{Number of colours}
 
-\item{totalExists}{Boolean. If TRUE black is added to the pallete.}
+\item{graphicType}{For which grafic type should the colours be optimized ("paperC1","paperC2","plotBox","ppt")}
 
-\item{graficType}{For which grafic type should the colours be optimized ("paperC1","paperC2","plotBox","ppt")}
+\item{totalExists}{Boolean. If TRUE black is added to the pallete.}
 }
 \description{
 This function creates various colour pallets which suit to the different layouts

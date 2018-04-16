@@ -17,5 +17,5 @@ modifyPAR(baseFile, newfile, replacement = NA)
 modify and rename par-files
 }
 \note{
-small numbers e.g. 0.0000001 will be transformed into 1exp-6. I don´t now if FORMIND can read shuch numbers. better write small numbers as string "0.000001"
+small numbers e.g. 0.0000001 will be transformed into 1exp-6. I don't now if FORMIND can read shuch numbers. better write small numbers as string "0.000001"
 }

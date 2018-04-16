@@ -6,7 +6,7 @@
 #' @param fileTypes Character string specifying a set of data type (e.g "default", which loads biomass, basal area, and stem number result files) load or a single file suffix (e.g. "res" for res-file) or a string vector containing several suffixes of files (e.g c("ba", "env")). Further options are: "hectare" loads all available data files which contain data aggregated on the hectare level; "patch" for plot level aggergated data; "cohort" for cohort level data; "patch_height" for data aggregated for every plot and height layer;"hectare_dbhClass" for data aggregated for every dbh class on the hectare level
 #' @param returnObejct Character string specifying the class of the return object. The default is "Forest", which returns a Forest object. "data.table" return data.table.
 #' 
-#' @seealso \code{\link{Forest}}
+#' @seealso \code{\link{Forest-class}}
 #' 
 #' @import data.table
 #' @export

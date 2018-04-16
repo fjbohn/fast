@@ -2,7 +2,7 @@
 #' @description This function creates various colour pallets which suit to the different layouts
 #'
 #' @param n Number of colours
-#' @param graficType For which grafic type should the colours be optimized ("paperC1","paperC2","plotBox","ppt")
+#' @param graphicType For which grafic type should the colours be optimized ("paperC1","paperC2","plotBox","ppt")
 #' @param totalExists Boolean. If TRUE black is added to the pallete.
 #' 
 #' @export
@@ -24,7 +24,7 @@ makeColorPalette<-function(n
         farben<-c(RColorBrewer::brewer.pal(n-1,name="Blues"),"#000000")
       }
     }else{
-      farben<-pft_rainbow(n)
+      farben<-pftRainbow(n)
     } 
     
   }
@@ -40,7 +40,7 @@ makeColorPalette<-function(n
       }
     }else{
       if(n<3){
-        farben<-pft_rainbow(n)
+        farben<-pftRainbow(n)
       }else{
         farben<-RColorBrewer::brewer.pal(n,name="Set1")
       }

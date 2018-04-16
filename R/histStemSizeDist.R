@@ -2,27 +2,31 @@
 #' @description histogramms of the data of an forest object
 #'
 #' @param data A forest object including the data 
+#' @param graphicType Character string indicating layout type of the graphic. "ppt" optimizes for powerpoint slides; "paperC1","paperC2" optimizes for graphic stretching over one or two collumns within a paper; "plotbox" opens a window an optimizes for the screen.
+#' @param file string which describes the file where the graphic will be saved
+#' @param xlim vector; controlled by the range of data
+#' @param ylim vector; controlled by the range of data
+
 #' @param y Vector of character strings nameing the variables which will be plotted. \code{getFNames(object)} returns an overview of available variables. You can also write short strings to plot all variables which start with these characters. E.g. "biomass_pft" plots the biomass of all pfts, whereas "biomass" plots biomass of all pfts and the total biomass.
 #' @param col Color palette to be used. If NA, an adequate collorpallet is created
 #' @param breaks one of:
 #' (i)a vector giving the breakpoints between histogram cells,
 #' (ii) a function to compute the vector of breakpoints,
 #' (iii) a single number giving the number of cells for the histogram,
-#' (iv)a character string naming an algorithm to compute the number of cells (see ‘Details’),
+#' (iv)a character string naming an algorithm to compute the number of cells (see Details),
 #' (v) a function to compute the number of cells.
 #'In the last three cases the number is a suggestion only; the breakpoints will be set to pretty values. If breaks is a function, the x vector is supplied to it as the only argument.
 #' @param usedYears numeric; the last x persantage [0-1] of the time line used for analysis
-#' @param firstLetterCapital Boolean. Should first Letter of labales be capitalized
-#' @param squaredBraked Boolean. squared brakets (TRUE) or round brakets (FALSE) for unit information in the labels
+# @param firstLetterCapital Boolean. Should first Letter of labales be capitalized
+# @param squaredBraked Boolean. squared brakets (TRUE) or round brakets (FALSE) for unit information in the labels
 #' @param innerTicks Boolean. 
 #' @param las numeric in {0,1,2,3}; the style of axis labels. 0: always parallel to the axis [default],1: always horizontal,2: always perpendicular to the axis, 3: always vertical.
-#' @param legend. Boolean. Should the legend be plotted.
-#' @param timeframe A vector of the form \code{c(startTime,endTime)}. 
-#' @param timeframe A vector of the form \code{c(startTime,endTime)}. 
+# @param legend Boolean. Should the legend be plotted.
+# @param timeframe A vector of the form \code{c(startTime,endTime)}. 
 #' @param log string specifying if axis scales should be logarithmic
 #' @param legend Boolean. Should the legend be plotted.
 
-#' @seealso \code{\link{Forest}},
+#' @seealso \code{\link{Forest-class}},
 #' @export
 
 #TODO axis beschriftung stimmt noch nicht...

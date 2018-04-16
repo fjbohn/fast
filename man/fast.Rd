@@ -15,6 +15,16 @@ fast(model, param, runtime = 500, repetitions = 1, suc.plot = T,
 
 \item{runtime}{Number of years to simulate.}
 
+\item{repetitions}{Number of repetitions of identical model runs, which differ only in the random seed.}
+
+\item{suc.plot}{bool; plot succession}
+
+\item{circle.plot}{bool; make circle.plot}
+
+\item{hist.plot}{bool; make histogramm}
+
+\item{graficType}{Character string; "paperC1" optimizes graphic for one collumen in an a paper. "paperC1" optimizes for a graphic straging over two collumns in a paper. "ppt" optimizes for powerpoint. "plotWindow" creates a new grahic device (window).}
+
 \item{newSimulation}{Boolean; Default TRUE; if FALSE no simulation is processed but data are analysed if available.}
 }
 \description{

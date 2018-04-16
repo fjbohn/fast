@@ -6,16 +6,17 @@
 #' @param col Color palette to be used. If NA, an adequate collorpallet is created
 #' @param graphicType Character string indicating layout type of the graphic. "ppt" optimizes for powerpoint slides; "paperC1","paperC2" optimizes for graphic stretching over one or two collumns within a paper; "plotbox" opens a window an optimizes for the screen.
 #' @param lineShows Character sting indicate what is shown by the line: "mean" or "median"
-# @param band not available at the moment
+#' @param band not available at the moment
 # @param file NA or character string. A character string would save the graphic with as png, pdf, or svg (depending on the given suffix)
 #' @param firstLetterCapital Boolean. Should first Letter of labales be capitalized
 #' @param squaredBraked Boolean. squared brakets (TRUE) or round brakets (FALSE) for unit information in the labels
 #' @param innerTicks Boolean. 
 #' @param las numeric in {0,1,2,3}; the style of axis labels. 0: always parallel to the axis [default],1: always horizontal,2: always perpendicular to the axis, 3: always vertical.
-#' @param legend. Boolean. Should the legend be plotted.
-#' @param timeframe A vector of the form \code{c(startTime,endTime)}. 
+#' @param legend Boolean. Should the legend be plotted.
+# @param timeframe A vector of the form \code{c(startTime,endTime)}. 
+#' @param file string which describes the file where the graphic will be saved
 
-#' @seealso \code{\link{Forest}},
+#' @seealso \code{\link{Forest-class}},
 #' @export
 
 # TODO-> if pft more than 9 pft_1 plots pft_1 and pft_10...
@@ -27,7 +28,7 @@ plotSuccession<-function(data
                          ,y
                          ,col=NA
                          ,graphicType="paperC2"
-                         ,line_shows="mean"
+                         ,lineShows="mean"
                          ,band=NA #sd
                          ,file=NA
                          , firstLetterCapital=F
@@ -37,8 +38,6 @@ plotSuccession<-function(data
                          #, referenceData = NA
                          #, timeframe =c(1,nrow(daten))
                          ,legend =T
-                         ,xpos = 0
-                         ,ypos = 0
 )
 #TODO: bands, firstLetterCapital
 {

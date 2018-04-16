@@ -4,7 +4,7 @@
 #' @param baseFile Character string indicating the par-file, which will be modified
 #' @param newfile Character string naming the new modified par-file
 #' @param replacement List of new values.Name of entries indicate variable, which will be modified. If the replacing variable is a float put a single number into the list. If the replacing variable an array put an vecotr into the list in case of one dimension array, or a matrix in case of two dimesnional array.
-#' @note  small numbers e.g. 0.0000001 will be transformed into 1exp-6. I don´t now if FORMIND can read shuch numbers. better write small numbers as string "0.000001"
+#' @note  small numbers e.g. 0.0000001 will be transformed into 1exp-6. I don't now if FORMIND can read shuch numbers. better write small numbers as string "0.000001"
 #' @export
 
 

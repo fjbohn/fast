@@ -5,9 +5,8 @@
 \title{plot formind simulation data over time}
 \usage{
 plotSuccession(data, y, col = NA, graphicType = "paperC2",
-  line_shows = "mean", band = NA, file = NA, firstLetterCapital = F,
-  squaredBraked = T, innerTicks = T, las = 0, legend = T, xpos = 0,
-  ypos = 0)
+  lineShows = "mean", band = NA, file = NA, firstLetterCapital = F,
+  squaredBraked = T, innerTicks = T, las = 0, legend = T)
 }
 \arguments{
 \item{data}{A forest object including the data}
@@ -18,6 +17,12 @@ plotSuccession(data, y, col = NA, graphicType = "paperC2",
 
 \item{graphicType}{Character string indicating layout type of the graphic. "ppt" optimizes for powerpoint slides; "paperC1","paperC2" optimizes for graphic stretching over one or two collumns within a paper; "plotbox" opens a window an optimizes for the screen.}
 
+\item{lineShows}{Character sting indicate what is shown by the line: "mean" or "median"}
+
+\item{band}{not available at the moment}
+
+\item{file}{string which describes the file where the graphic will be saved}
+
 \item{firstLetterCapital}{Boolean. Should first Letter of labales be capitalized}
 
 \item{squaredBraked}{Boolean. squared brakets (TRUE) or round brakets (FALSE) for unit information in the labels}
@@ -26,15 +31,11 @@ plotSuccession(data, y, col = NA, graphicType = "paperC2",
 
 \item{las}{numeric in {0,1,2,3}; the style of axis labels. 0: always parallel to the axis [default],1: always horizontal,2: always perpendicular to the axis, 3: always vertical.}
 
-\item{lineShows}{Character sting indicate what is shown by the line: "mean" or "median"}
-
-\item{legend.}{Boolean. Should the legend be plotted.}
-
-\item{timeframe}{A vector of the form \code{c(startTime,endTime)}.}
+\item{legend}{Boolean. Should the legend be plotted.}
 }
 \description{
 Process forest-class-objects to create time vs. variable plots.
 }
 \seealso{
-\code{\link{Forest}},
+\code{\link{Forest-class}},
 }

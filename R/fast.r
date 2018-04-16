@@ -5,7 +5,14 @@
 #' @param param Character sting naming the par-file. 
 #' 
 #' @param runtime Number of years to simulate.
+#' @param repetitions Number of repetitions of identical model runs, which differ only in the random seed.
 #' @param newSimulation Boolean; Default TRUE; if FALSE no simulation is processed but data are analysed if available.
+#' 
+#' @param suc.plot bool; plot succession
+#' @param circle.plot bool; make circle.plot
+#' @param hist.plot bool; make histogramm
+#' 
+#' @param graficType Character string; "paperC1" optimizes graphic for one collumen in an a paper. "paperC1" optimizes for a graphic straging over two collumns in a paper. "ppt" optimizes for powerpoint. "plotWindow" creates a new grahic device (window). 
 #' 
 #' @export
 

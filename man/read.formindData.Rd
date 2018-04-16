@@ -20,5 +20,5 @@ read.formindData(projectName = "experiment", path = "results/",
 runs FORMIND using a CMDfile and check run for errors.
 }
 \seealso{
-\code{\link{Forest}}
+\code{\link{Forest-class}}
 }

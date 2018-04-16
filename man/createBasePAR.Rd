@@ -10,11 +10,11 @@ createBasePAR(parFile, base = "../model/formind_parameters/", pattern = NA,
 \arguments{
 \item{parFile}{Character sting naming the new par-file.}
 
+\item{base}{Character sting naming the already existing par-file.}
+
 \item{pattern}{Vector of character strings naming those variables of the par file which will be modified}
 
 \item{replacement}{Vector of character strings which will replace the line, where the pattern is found.}
-
-\item{model}{Character sting naming the already existing par-file.}
 }
 \description{
 create a modifyable par file based on another parfile.

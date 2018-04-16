@@ -19,33 +19,31 @@ histStemSizeDist(data, y = "NumberTreesTotal", col = NA, breaks = 0,
 (i)a vector giving the breakpoints between histogram cells,
 (ii) a function to compute the vector of breakpoints,
 (iii) a single number giving the number of cells for the histogram,
-(iv)a character string naming an algorithm to compute the number of cells (see ‘Details’),
+(iv)a character string naming an algorithm to compute the number of cells (see Details),
 (v) a function to compute the number of cells.
 In the last three cases the number is a suggestion only; the breakpoints will be set to pretty values. If breaks is a function, the x vector is supplied to it as the only argument.}
 
 \item{usedYears}{numeric; the last x persantage [0-1] of the time line used for analysis}
 
+\item{graphicType}{Character string indicating layout type of the graphic. "ppt" optimizes for powerpoint slides; "paperC1","paperC2" optimizes for graphic stretching over one or two collumns within a paper; "plotbox" opens a window an optimizes for the screen.}
+
+\item{xlim}{vector; controlled by the range of data}
+
+\item{ylim}{vector; controlled by the range of data}
+
 \item{innerTicks}{Boolean.}
+
+\item{file}{string which describes the file where the graphic will be saved}
 
 \item{las}{numeric in {0,1,2,3}; the style of axis labels. 0: always parallel to the axis [default],1: always horizontal,2: always perpendicular to the axis, 3: always vertical.}
 
 \item{log}{string specifying if axis scales should be logarithmic}
 
 \item{legend}{Boolean. Should the legend be plotted.}
-
-\item{firstLetterCapital}{Boolean. Should first Letter of labales be capitalized}
-
-\item{squaredBraked}{Boolean. squared brakets (TRUE) or round brakets (FALSE) for unit information in the labels}
-
-\item{legend.}{Boolean. Should the legend be plotted.}
-
-\item{timeframe}{A vector of the form \code{c(startTime,endTime)}.}
-
-\item{timeframe}{A vector of the form \code{c(startTime,endTime)}.}
 }
 \description{
 histogramms of the data of an forest object
 }
 \seealso{
-\code{\link{Forest}},
+\code{\link{Forest-class}},
 }
